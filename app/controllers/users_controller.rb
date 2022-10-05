@@ -9,11 +9,7 @@ class UsersController < ApplicationController
       render json: @user.errors, status: :unprocessable_entity
     end
   end
-
-  def index
-    @user = User.all
-    render json: @user
-  end
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
