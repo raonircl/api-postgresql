@@ -31,6 +31,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'rspec-rails'
   gem 'pry-rails'
+  gem 'factory_bot_rails'
 end
 
 group :development do
