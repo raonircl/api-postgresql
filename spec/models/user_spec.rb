@@ -1,9 +1,8 @@
-require 'rails-helper'
+require 'rails_helper'
 
-Rspec.describe User, type: :model do
-  it 'teste de validação' do
-    #user = User.create(name: '', age: 0)
-    user = build(:user, name: '', age: 0)
-
-    expect(user).to ep " '' 0 "  
+RSpec.describe User, type: :model do
+  describe 'validation' do
+    it { should validate_numericality_of(:age).is_greater_than_or_equal_to(0) }
+    it { should validate_presence_of(:name) }
+  end
 end
