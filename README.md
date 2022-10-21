@@ -1,24 +1,17 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# api-postgresql
 
-Things you may want to cover:
+O projeto conta com uma api construida em Ruby on Rails para fins de desenvolvimento e aprendizado.
 
-* Ruby version
 
-* System dependencies
+The project has an API built in Ruby on Rails for development and learning purposes.
+## Tutor
 
-* Configuration
+- [Joathan](https://github.com/joathan)
 
-* Database creation
+## Referência
 
-* Database initialization
+ - [RubyGems](https://rubygems.org/)
+## 🛠 Habilidades
+Ruby on Rails, HTML...
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
