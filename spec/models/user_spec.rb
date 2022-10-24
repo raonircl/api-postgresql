@@ -1,8 +1,5 @@
 require 'rails_helper'
 
-
-#binding.pry
-
 RSpec.describe User, type: :model do
   describe 'test validation' do
     it 'do name and age test validations' do 
