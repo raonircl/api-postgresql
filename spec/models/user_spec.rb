@@ -1,23 +1,14 @@
 require 'rails_helper'
 
+
+#binding.pry
+
 RSpec.describe User, type: :model do
-  context "validation test" do
-    
-    it "true validation" do
-      user = User.new( name: 'fffs', age: 10 )
-      expect(user).to be_valid
-    end
-
-    it "only age" do
-      user = User.new( age: 101 )
-      expect(user).to_not be_valid  
-    end
-
-    it "only name" do
-      user = User.new( name: nil )
-      expect(user).to_not be_valid
-    end
+  describe 'test validation' do
+    it 'do name and age test validations' do 
+      should validate_numericality_of(:age).is_greater_than_or_equal_to(0).is_less_than_or_equal_to(100)
+      should validate_presence_of(:name)
+    end    
 
   end
-  
 end
