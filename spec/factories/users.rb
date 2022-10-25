@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :user do
-    name { "My" }
+    name { "Miss" }
     age { 1 }
   end
 end
